@@ -1,7 +1,41 @@
 body {
     margin: 0;
     background-color: #e4edef;
-    color: #000000;
+    color: #10333c;
     font-family: system-ui, sans-serif;
     line-height: 1.5;
+}
+
+/* CABEÇALHO */
+.topo {
+    background-color: #10333c;
+    color: #FFFFFF;
+    padding: 20px 24px;
+}
+
+.topo_nome {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.topo_apoio {
+    margin: 4px 0 0;
+    color: #86aeb8;
+    font-size: 0.85rem;
+}
+
+/* SEÇÃO DE CONTEÚDO */
+.secao {
+    padding: 30px 24px;
+}
+
+/* GRADE PRODUTOS */
+.produtos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
