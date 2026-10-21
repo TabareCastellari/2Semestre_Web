@@ -41,3 +41,93 @@ body {
 }
 
 /* O CARTÃO DO PRODUTO */
+.produto {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+/* O espaço da foto. Uma div vazia não tem altura, então precisamos dar uma para ela aparecer*/
+.produto_figura {
+    height: 130px;
+}
+
+/* Uma cor diferente para cada produto */
+.produto_figura--a {
+    background-color: red;
+}
+.produto_figura--b {
+    background-color: green;
+}
+.produto_figura--c {
+    background-color: blue;
+}
+
+
+.produto_corpo {
+    padding: 15px;
+}
+
+.produto_nome {
+  margin: 0;  
+  font-size: 1.05rem;
+}
+
+.produto_texto {
+    margin: 8px 0;
+    color: #5c7883;
+    font-size: 0.9rem;
+}
+
+.produto_preco {
+    margin: 0 0 14px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* O botão não herda a fonte do body sozinho.
+font: inherit conserta isso */
+
+.botao {
+    font: inherit;
+    width: 100%;
+    padding: 10px;
+    background-color: #06707d;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* :hover = quando o mouse está em cima. */
+.botao:hover {
+    background-color: #044e58;
+}
+
+/* RODAPÉ */
+.rodape {
+    background-color: #10333c;
+    color: #a9c4cb;
+    padding: 20px 24px;
+    font-size: 0.85rem;
+}
+
+.rodape p {
+    margin: 0
+}
+
+/* UPDATE: Fase 2 do projeto */
+.tabela-rolagem {
+    overflow-x: auto;
+}
+
+/* border-collapse: collapse gruda as células umas nas outras. Sem ele, o navegador deixa um vão entre cada célula e a linha divisória aparece picotada */
+.tabela {
+    width: 100%;
+    min-width: 520px;
+    border-collapse: collapse;
+    background-color: var(--papel);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* O <caption> nasce centralizado. Alinhamos à esquerda para ele combinar com o resto da página */

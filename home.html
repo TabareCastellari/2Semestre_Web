@@ -35,7 +35,7 @@
                 <!-- Segundo produto -->
                 <li class="produto">
                     <!-- Espaço da foto. Por enquanto é só um bloco colorido -->
-                    <div class="produto_figura produto_figura--a">
+                    <div class="produto_figura produto_figura--b">
                     </div>
                     <div class="produto_corpo">
                         <h3 class="produto_nome">Catuaí Vermelho</h3>
@@ -48,7 +48,7 @@
                 <!-- Terceiro produto -->
                 <li class="produto">
                     <!-- Espaço da foto. Por enquanto é só um bloco colorido -->
-                    <div class="produto_figura produto_figura--a">
+                    <div class="produto_figura produto_figura--c">
                     </div>
                     <div class="produto_corpo">
                         <h3 class="produto_nome">Geisha da Serra</h3>
@@ -58,7 +58,66 @@
                     </div>
                 </li>
             </ul>
+
+            <h2></h2>
         </section>
+
+        <!-- UPDATE: Fase 2 do projeto -->
+         <section class="secao">
+            <h2>Compare antes de escolher</h2>
+            <!-- Esta div envolve a tabela para ela poder rolar de lado no celular, em vez de arrebentar a página -->
+            <div class="tabela-rolagem">
+                <table class="tabela">
+                    <!-- <caption> é o título da tabela. Diferente de um <h3> solto por perto, ele fica preso a ela -->
+                    <caption>Perfil de cada lote da safra 2026.</caption>
+                    <!-- scope="col" diz que este <th> rotula uma COLUNA -->
+                    <thead>
+                        <tr>
+                            <th scope="col">Café</th>
+                            <th scope="col">Torra</th>
+                            <th scope="col">Corpo</th>
+                            <th scope="col">Acidez</th>
+                            <th scope="col">Método indicado</th>
+                            <th scope="col">Preço</th>
+                        </tr>
+                    </thead>
+                    <!-- O nome do café é <th scope="row"> porque ele rotula a LINHA inteira: não é dadp, é etiqueta -->
+                    <tbody>
+                        <tr>
+                            <th scope="row">Bourbon Amarelo</th>
+                            <td>Média</td>
+                            <td>Médio</td>
+                            <td>Média</td>
+                            <td>Coador de papel</td>
+                            <td>R$ 42,90</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Catuaí Vermelho</th>
+                            <td>Escura</td>
+                            <td>Encorpado</td>
+                            <td>Baixa</td>
+                            <td>Prensa francesa</td>
+                            <td>R$ 38,50</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Geisha da Serra</th>
+                            <td>Clara</td>
+                            <td>Leve</td>
+                            <td>Alta</td>
+                            <td>Coador V60</td>
+                            <td>R$ 89,00</td>
+                        </tr>
+                    </tbody>
+
+                    <!-- colspan="6" faz esta célula ocupar  colunas -->
+                    <tfoot>
+                        <tr>
+                            <td colspan="6">Todos os lotes são torrados na semana de envio.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+         </section>
     </main>
 
     <!-- Rodape -->
