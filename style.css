@@ -53,13 +53,13 @@ body {
 
 /* Uma cor diferente para cada produto */
 .produto_figura--a {
-    background-color: red;
+    background-color: rgb(83, 51, 14);
 }
 .produto_figura--b {
-    background-color: green;
+    background-color: rgb(128, 68, 0);
 }
 .produto_figura--c {
-    background-color: blue;
+    background-color: rgb(49, 30, 9);
 }
 
 
@@ -131,3 +131,54 @@ font: inherit conserta isso */
 }
 
 /* O <caption> nasce centralizado. Alinhamos à esquerda para ele combinar com o resto da página */
+.tabela caption {
+    padding-bottom: 10px;
+    color: var(--texto-fraco);
+    font-size: 0.85rem;
+    text-align: left;
+}
+
+/* Uma regra para od dois tipos de célula de uma vez.  A vírgula no seletor quer dizer "e também". <th> nasce centralizado, por isso o text-align. */
+.tabela th, .tabela td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid #CBD9DD;
+}
+
+/* Seletor com espaço = "th que está dentro de thead". Assim o cabeçalho pinta, mas o nome do café na lateral não */
+.tabela thead th {
+    background-color: var(--destaque);
+    color: var(--papel);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border-bottom: none;
+}
+
+/* :nth-child(even) pega as linhas de posição par; Em tabela larga, a faixa alternada evita ler dado de uma linha achando que é de outra. Troque "even" por "odd" para inverter */
+.tabela tbody tr:nth-child(even) {
+    background-color: #F2F7F8;
+}
+
+.tabela tfoot td {
+    color: var(--texto-fraco);
+    font-size: 0.85rem;
+    border-bottom: none;
+}
+
+/* CONTADOR DO CARRINHO */
+.topo__carrinho {
+  margin: 10px 0 0;
+  font-size: 0.9rem;
+}
+ 
+/* Seletor com # busca um id, assim como o ponto busca uma classe. */
+#contador {
+  display: inline-block;
+  min-width: 24px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background-color: var(--destaque);
+  color: var(--papel);
+  font-weight: bold;
+  text-align: center;
+}
